@@ -97,22 +97,22 @@ const Login = () => {
             </div>
 
             <div className=''>
-                <form onSubmit={(e) => e.preventDefault()} className='absolute my-24 mx-auto right-0 left-0 w-3/12 bg-slate-400 p-12 text-white rounded-md bg-opacity-85 min-w-[24rem]'>
+                <form onSubmit={(e) => e.preventDefault()} className='absolute my-24 mx-auto right-0 left-0 w-3/12 bg-gray-300 p-12  rounded-md  min-w-[24rem]  bg-white-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100 shadow-lg'>
 
-                    <h1 className='font-bold text-3xl py-4'>{isSignIn === true ? "Sign In" : "Sign Up"}</h1>
+                    <h1 className='font-bold text-3xl py-4 text-gray-700'>{isSignIn === true ? "Sign In" : "Sign Up"}</h1>
 
-                    {!isSignIn && <input ref={name} type="text" placeholder='Name' className='p-4 my-4 w-full bg-gray-700 rounded-md' />}
+                    {!isSignIn && <input ref={name} type="text" placeholder='Name' className='p-4 my-4 w-full bg-white rounded-md shadow-md ' />}
 
-                    <input ref={email} type="email" placeholder='Email Address' className='p-4 my-4 w-full bg-gray-700 rounded-md' />
-                    <input ref={password} type="password" placeholder='Password' className='p-4 my-4 w-full bg-gray-700 rounded-md' />
+                    <input ref={email} type="email" placeholder='Email Address' className='p-4 my-4 w-full bg-white rounded-md shadow-md' />
+                    <input ref={password} type="password" placeholder='Password' className='p-4 my-4 w-full bg-white rounded-md shadow-md' />
                     <p className=' text-red-500'>{errorMessege}</p>
 
-                    <button onClick={handleSubmit} className='p-4 px-2 my-6  w-full bg-green-500 rounded-md'>{isSignIn === true ? "Sign In" : "Sign Up"}</button>
+                    <button onClick={handleSubmit} className='p-4 px-2 my-6 text-white  w-full bg-green-500 rounded-md shadow-md'>{isSignIn === true ? "Sign In" : "Sign Up"}</button>
 
                     <div className='flex gap-1'>
 
                         <p className=' text-gray-500'>{isSignIn ? "New to Netflix?" : "Already a User?"}</p>
-                        <p className=' cursor-pointer hover:underline' onClick={toggleIsSignIn}> {isSignIn ? "Sign Up now" : "Sign In"}</p>
+                        <p className=' cursor-pointer hover:underline text-blue-400' onClick={toggleIsSignIn}> {isSignIn ? "Sign Up now" : "Sign In"}</p>
                     </div>
                 </form>
             </div>

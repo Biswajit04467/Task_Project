@@ -5,8 +5,8 @@ const RestaurantCard = ({res}) => {
     return (
         <div>
             
-            <div className="flex justify-center m-2 box-sizing:border-box">
-                <div className="p-2 flex flex-col w-[18rem] hover:border border-black  " >
+            <div className="flex justify-center m-2 box-sizing:border-box ">
+                <div className="p-2 flex flex-col w-[18rem] hover:bg-gray-200 min-h-[25rem] rounded-lg " >
 
                    
                     <img src={CDN_URL + res.info.cloudinaryImageId} alt="" className="w-[16rem] h-[10rem] object-cover rounded-xl" />
