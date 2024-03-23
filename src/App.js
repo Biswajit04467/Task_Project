@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import Body from './Component/Body';
+import About from './Component/About';
+import Header from './Component/Header';
+import { Outlet, createBrowserRouter } from 'react-router-dom';
+import Contact from './Component/Contact';
+import Login from './Component/Login';
+import FoodPage from './Component/FoodPage';
+import Cart from './Component/Cart';
 
-function App() {
+
+export function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Outlet />
     </div>
   );
 }
 
-export default App;
+export const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Body />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+
+      {
+        path: "/contact",
+        element: <Contact />
+      },
+      {
+        path: "/login",
+        element: <Login />
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <FoodPage />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
+    ]
+  }
+]);
+
+
