@@ -93,7 +93,7 @@ const Login = () => {
         <div className='LoginPage'>
 
             <div className='absolute'>
-                <img className='  w-lvw h-lvh object-cover' src="https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?w=1060&t=st=1711168031~exp=1711168631~hmac=0f80eac2b1d7c5ab5ec9c002d14f45438647d1bb09d428097d42010e8dd3b28d" alt="background" />
+                <img className=' w-lvw h-lvh object-cover' src="https://img.freepik.com/free-photo/top-view-circular-food-frame_23-2148723455.jpg?w=1060&t=st=1711168031~exp=1711168631~hmac=0f80eac2b1d7c5ab5ec9c002d14f45438647d1bb09d428097d42010e8dd3b28d" alt="background" />
             </div>
 
             <div className=''>
@@ -112,7 +112,7 @@ const Login = () => {
                     <div className='flex gap-1'>
 
                         <p className=' text-gray-500'>{isSignIn ? "New to Netflix?" : "Already a User?"}</p>
-                        <p className=' cursor-pointer hover:underline text-blue-400' onClick={toggleIsSignIn}> {isSignIn ? "Sign Up now" : "Sign In"}</p>
+                        <p className=' cursor-pointer hover:underline text-blue-400 ' onClick={toggleIsSignIn}> {isSignIn ? "Sign Up now" : "Sign In"}</p>
                     </div>
                 </form>
             </div>
