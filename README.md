@@ -27,3 +27,6 @@ Usage
 3.	Add items to your cart and view your cart.
 4.	Place your order and enjoy your meal!
 
+
+Disclaimer: use CORS extension for seeing the fully fledged website !
+
