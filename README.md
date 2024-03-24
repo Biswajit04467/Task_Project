@@ -4,8 +4,11 @@ Features
 
 
 •	Sign In/Sign Up: Users can sign in or sign up using their email id through Firebase authentication.
+
 •	Cart Management: Users can add items to their cart, view their cart, and remove items from their cart. Cart state is managed using Redux for efficient state management.
+
 •	Shimmer UI: A shimmer UI is displayed while items are loading, providing users with visual feedback that content is being loaded.
+
 •	Restaurant API: The application fetches restaurant data from a restaurant API and displays it to the users.
 
 
